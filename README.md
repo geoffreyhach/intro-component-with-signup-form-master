@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/geoffjecrois)
+- Solution URL: [Add solution URL here](https://github.com/geoffjecrois/intro-component-with-signup-form-master)
 - Live Site URL: [Add live site URL here](https://geoffjecrois.github.io/intro-component-with-signup-form-master/)
 
 ## My process
