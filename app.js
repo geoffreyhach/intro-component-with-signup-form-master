@@ -7,9 +7,11 @@ myForm.addEventListener('submit', function(e) {
 
     if (firstName.value == '') {
         let myError = firstName.nextElementSibling;
+        let svgError = firstName.previousElementSibling;
 
         myError.innerHTML = 'First name cannot be empty';
         firstName.style = 'outline : 2px solid hsl(0, 100%, 74%);';
+        svgError.style.display= 'block';
         
         e.preventDefault();
     }
@@ -22,9 +24,11 @@ myForm.addEventListener('submit', function(e) {
 
     if (lastName.value == '') {
         let myError = lastName.nextElementSibling;
+        let svgError = lastName.previousElementSibling;
 
         myError.innerHTML = 'Last name cannot be empty';
         lastName.style = 'outline : 2px solid hsl(0, 100%, 74%);';
+        svgError.style.display= 'block';
         e.preventDefault();
     }
 });
@@ -37,10 +41,12 @@ myForm.addEventListener('submit', function(e) {
 
     if (myRegex.test(eMail.value) == false) {
         let myError = eMail.nextElementSibling;
+        let svgError = eMail.previousElementSibling;
 
         myError.innerHTML = `Looks like it's not an e-mail`;
         eMail.value = 'mymail@exemple.com';
         eMail.style = 'color : hsl(0, 100%, 74%); outline : 2px solid hsl(0, 100%, 74%);';
+        svgError.style.display= 'block';
         e.preventDefault;
 
     }
@@ -56,9 +62,11 @@ myForm.addEventListener('submit', function(e) {
 
     if (passWord.value == '') {
         let myError = passWord.nextElementSibling;
+        let svgError = passWord.previousElementSibling;
         
         myError.innerHTML = 'Password cannot be empty';
         passWord.style = 'color : hsl(0, 100%, 74%); outline : 2px solid hsl(0, 100%, 74%);';
+        svgError.style.display= 'block';
         e.preventDefault;
     }
 

@@ -24,13 +24,17 @@
   <div class="content">
     <button class="trial">  <b>Try it free 7 days</b> then $20/mo. thereafter</button>
     <form action="post" id="my-form">
-      <input type="text" class="first-name" id="first-name" value="First Name" onfocus="this.value=''" >
+      <label for="first-name" class="svg-error"></label>
+      <input type="text" name="first-name" class="first-name" id="first-name" value="First Name" onfocus="this.value=''" >
       <span class="error"></span>
-      <input type="text" class="last-name" id="last-name" value="Last Name" onfocus="this.value=''">
+      <label for="last-name" class="svg-error"></label>
+      <input type="text" names="last-name" class="last-name" id="last-name" value="Last Name" onfocus="this.value=''">
       <span class="error"></span>
-      <input type="text" class="email" id="email" value="Your E-mail" onfocus="this.value=''">
+      <label for="email" class="svg-error"></label>
+      <input type="text" name="email" class="email" id="email" value="Your E-mail" onfocus="this.value=''">
       <span class="error"></span>
-      <input type="password" class="password" id="password" value="Password" onfocus="this.value=''">
+      <label for="password" class="svg-error"></label>
+      <input type="password" name="password" class="password" id="password" value="Password" onfocus="this.value=''">
       <span class="error"></span>
       <input type="submit" value="Claim your free trial ">
       <p>By clicking the button, you are agreeing to our <a href="#" class="href">Terms and Services</a></p>

@@ -78,6 +78,26 @@ main {
 
 }
 
+.svg-error{
+    position: relative;
+    display: none;
+}
+
+.svg-error::before {
+    content:"";
+    
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right : 10px;
+    top: 33px;
+    background-image: url(./images/icon-error.svg);
+}
+
+.oui {
+    display: block;
+}
+
 .content input {
     border-radius: 5px;
     border: 0px;
